@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<!-- <script type="text/javascript">
+		var section = '{{section}}';
+		if (section == 'home'){
+		}
+		else if (section == 'portfolio'){
+			// document.getElementById('portfolio').style.background='red';
+			document.getElementById("portfolio").style.background = "white";
+		}
+		else if (section == 'services'){
+			document.getElementById('services').style.background='red';
+			document.getElementById("services").style.background = "white";
+		}
+		console.log(section)
+	</script> -->
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>{% block title %} BAse Title{% endblock %}</title>
+</head>
+<body>
+
+	<nav>
+		
+	<div id="first-header">
+		<div id="nav-image">
+			<span><img src="bg1.png" height="80" width="180"></span>
+		</div>
+		<div id="nav-links">
+			<span><a href="/" id="home">Home</a></span>
+			<span><a href="/portfolio" id="portfolio">Portfolio</a></span>
+			<span><a href="/services" id="services">Services</a></span>
+		</div>
+		<!-- <div id="nav-address">
+			<span>
+				<img src="call.png" height="20" width="20">+2340160535033
+			</span> 
+			<br>
+			<span>
+				<img src="email.png" height="20" width="20">damaofficial001@gmail.com
+			</span>
+			
+		</div> -->
+	</div>
+	</nav>
+	{% block content %}
+
+	{% endblock %}
+
+	<footer>
+		<div style="background: steelblue;text-align: center;padding: 21%;color: white;font-size: 20px;">
+			Copyright ©2021 All rights reserved | Legacy Technological Concept
+		</div>
+	</footer>
+
+</body>
+{% with section as section %}
+		{% if section in 'home' %}
+				<script>
+					document.getElementById("home").style.color = "white";
+					document.getElementById("home").style.padding = "11px 25px";
+					document.getElementById("home").style.background = "steelblue";
+					document.getElementById("")
+				</script>
+		{% elif section in 'portfolio' %}
+				<script>
+					document.getElementById("portfolio").style.background = "white";
+					document.getElementById("portfolio").style.color = "gold";
+					document.getElementById("portfolio").style.padding = "10px";
+				</script>
+
+		{% elif section in 'services' %}
+				<script>
+					document.getElementById("services").style.background = "white";
+					document.getElementById("services").style.color = "gold";
+					document.getElementById("services").style.padding = "10px";
+				</script>
+		{% endif%}
+	{% endwith %}
+</html>

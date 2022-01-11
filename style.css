@@ -1,0 +1,366 @@
+body {
+  margin: 0px;
+}
+
+hr {
+  opacity: 0.1;
+}
+.clr {
+  clear: both;
+}
+.nav-item {
+  margin-right: 20px;
+}
+.nav-item > .active {
+  /* background: white; */
+  font-weight: bold;
+  /* color: white; */
+  /* padding: 4px; */
+  /* border-radius: 5px; */
+}
+.nav-link:hover {
+  transition-property: border-top;
+  transition-delay: 0.1s;
+  border-top: 2px solid white;
+}
+#first-header {
+  margin: auto;
+  background: steelblue;
+  padding: 1px;
+  position: fixed;
+  width: 100%;
+}
+#first-header span {
+  margin: 20px;
+}
+
+#nav-image {
+  float: left;
+  padding: 0px;
+}
+
+#nav-links {
+  display: inline-block;
+  /*background: grey;*/
+  float: left;
+  padding: 20px;
+}
+#nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-family: Arial;
+}
+
+.home {
+  text-decoration: none;
+  font-weight: bold;
+  color: red;
+  padding: 11px 25px;
+  border-radius: 5px;
+  background: steelblue;
+}
+
+#nav-links a:hover {
+  text-decoration: none;
+  transition-property: padding, border-radius;
+  transition-duration: 1s;
+  padding: 15px;
+  border-radius: 30px;
+  border-bottom: 2px solid white;
+}
+
+#nav-address {
+  display: inline-block;
+  /*background: blue;*/
+  float: right;
+  color: white;
+}
+#second-header {
+  /*background: rgba(0, 0, 0, 0.7);*/
+  /*background-image: url('bg.jpg');*/
+  background-position: bottom right;
+  padding: 10% 6%;
+  padding-top: 13%;
+  margin: 0px;
+}
+
+#second-header h1 {
+  color: black;
+  font-size: 3em;
+  margin: 0px;
+  width: 70%;
+  font-family: ;
+}
+
+#second-header p {
+  font-family: Arial;
+}
+
+#message a {
+  background: steelblue;
+}
+
+#message a:hover {
+  transition-property: box-shadow, padding;
+  transition-duration: 1s, 1s;
+  /* background: steelblue; */
+  padding: 13px 19px;
+  box-shadow: 0px 0px 6px lightgray;
+}
+
+.mino-header {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: laksaman;
+  padding: 1%;
+  background: inherit;
+  margin: 0px auto;
+  color: black;
+}
+
+/*style for the inner sub and deco class*/
+.inner-sub {
+  box-sizing: border-box;
+  margin: 0px;
+  background: whitesmoke;
+  padding-bottom: 10%;
+}
+.deco {
+  background: white;
+  /* display: inline-block; */
+  padding: 4% 1.5%;
+  min-height: 12em;
+  box-sizing: border-box;
+  margin: 11.5%;
+  margin-bottom: 4%;
+  box-shadow: 0px 0px 10px lightgray;
+  border-radius: 0px;
+  text-align: center;
+}
+.deco:hover {
+  /*background: red;*/
+  transition-property: padding-top;
+  transition-duration: 1s;
+  padding-top: 30px;
+}
+.deco-text {
+  font-weight: bold;
+  font-family: loma;
+  margin: 0px;
+  font-size: 1.3rem;
+}
+
+.deco span {
+  font-family: helvetica;
+}
+
+/*css fr th about page cntain in index page*/
+.about-sec {
+  padding: 5px;
+  background: whitesmoke;
+  background-image: url("images/bg.jpg");
+  background-position: top center;
+  background-size: 100%;
+  height: 32em;
+  background-repeat: no-repeat;
+  padding-top: 13%;
+
+  /*background-blend-mode: difference;*/
+}
+.about-sec-right {
+  background: transparent;
+  text-align: left;
+  color: white;
+  float: right;
+  width: 40%;
+}
+.motivate-text {
+  font-family: helvetica;
+  font-size: 1.2rem;
+}
+.motivate {
+  font-size: 2.5em;
+  color: white;
+  margin: 0px;
+  padding: 0%;
+  text-align: left;
+  /*background: whitesmoke;*/
+  font-family: laksaman;
+  font-weight: bold;
+  /*box-shadow: 0px 5px 10px brown;*/
+}
+
+.about-sec-left {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 5% 0px;
+  /*background-image:url('bg.jpg') ;*/
+}
+
+/*css for the projects section*/
+.sub-project {
+  text-align: center;
+}
+
+.sub-project-hr {
+  border: 4px dotted steelblue;
+  border-top: none;
+  width: 30%;
+  background-color: white;
+  margin: 5px auto;
+}
+
+.sub-project-inner {
+  text-align: center;
+  background: rgb(79, 85, 102);
+  width: 80%;
+  margin: 10px auto;
+  height: 350px;
+  border-radius: 30px;
+  border: 1px solid steelblue;
+  /*border-top: none;*/
+  background: ghostwhite;
+  margin-bottom: 30%;
+}
+.sub-project img {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+}
+.sub-project-link img {
+  width: 30px;
+  height: 30px;
+  padding: 3px 3px;
+  border-radius: 70px;
+  background: white;
+}
+
+.sub-project-img {
+  background: white;
+  margin: auto;
+  padding: 5px;
+  border-radius: 50px;
+  border: 1px solid steelblue;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  text-align: center;
+  top: -35px;
+}
+.sub-project-img img {
+  margin: 5px auto;
+  height: 70px;
+  width: 70px;
+}
+
+.sub-project-inner-text {
+  margin: 0px auto;
+  width: 99%;
+  padding: 0.5%;
+  box-sizing: border-box;
+  font-size: 1.2em;
+  font-family: laksaman;
+  cursor: pointer;
+  color: black;
+}
+.sub-project-inner ul {
+  text-align: left;
+  padding: 0px 25px;
+}
+.sub-project-inner li {
+  font-size: 1rem;
+  font-family: helvetica;
+  line-height: 2;
+  color: rgba(10, 10, 0, 0.7);
+}
+
+.project-text a {
+  text-decoration: none;
+}
+/* about ceo section css */
+/* general */
+.about-ceo {
+  padding: 7%;
+  font-family: laksaman;
+}
+
+/* Follow us section css */
+/* general */
+.follow-us {
+  background: rgba(0, 0, 0, 0.808);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 2%;
+}
+.follow-us span {
+  font-family: laksaman;
+}
+.follow-us h2 {
+  line-height: 1.4;
+  margin: 5% auto;
+  font-family: ubuntu;
+}
+
+.follow-us img {
+  height: 20px;
+  width: 20px;
+}
+/* General section */
+/* the contact us section css */
+.contact-us {
+  background: white;
+  padding: 5%;
+  text-align: center;
+}
+
+.contact-us img {
+  height: 100px;
+  width: 100px;
+}
+/* end of the generatl contact  css */
+
+/* services pages css */
+/* service column section */
+
+.service-main {
+  padding: 5%;
+  margin-left: 0%;
+  /* background: red; */
+}
+.service-row {
+  margin: 10% 0%;
+  font-family: laksaman;
+}
+.icon img {
+  height: 50px;
+  width: 50px;
+}
+
+.icon {
+  background: steelblue;
+  border-radius: 50%;
+  width: auto;
+  height: 90px;
+  text-align: center;
+  margin: 1%;
+  padding: 6%;
+  margin-right: 7%;
+}
+/* end of the css for the service page */
+
+/* begining of the css for the portfolio page */
+/*  */
+.skill-row {
+  margin: 10% 0px;
+  box-sizing: border-box;
+}
+i {
+  padding-right: 10px;
+  width: 30px;
+}
